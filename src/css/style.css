@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+/* body {
+    background: url("../src/images/10.jpg");
+} */
+
+main {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/*article about*/
+
+.about-container {
+  position: relative;
+  object-fit: cover;
+  margin-bottom: 0vh;
+  margin: auto;
+}
+
+.about-text {
+  position: absolute;
+  top: calc(30%);
+  left: calc(10%);
+  transform: translate(calc(-10%) calc(-10%));
+  color: black;
+}
+
+.about-text h1 {
+  width: calc(90%);
+  text-align: left;
+  margin-bottom: 0.5%;
+  font-size: 3rem;
+  color: #c4972e;
+  font-family: "Dancing Script", cursive;
+}
+
+.about-container p {
+  width: calc(46%);
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: #ffffff;
+}
+.about-container img {
+  width: 100%;
+  height: calc(420px + 10vh);
+  object-fit: cover;
+}
+
+/* section gallery*/
+div.acomodações {
+  display: flex;
+  margin: 10vh;
+  padding: 0;
+}
+div.acomodações h2 {
+  color: #c4972e;
+  font-size: 3rem;
+  font-family: "Dancing Script", cursive;
+  text-align: left;
+}
+div.text-acomodações {
+  text-align: left;
+  display: inline-block;
+  padding: 8% 0 0 7%;
+}
+div.text-acomodações p {
+  line-height: 1.8rem;
+  padding-top: 2%;
+}
+
+section.section-gallery {
+  border-radius: 1rem;
+}
+section > h2 {
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+  font-size: 3rem;
+  text-align: center;
+  color: #c4972e;
+  font-family: "Dancing Script", cursive;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  justify-items: center;
+}
+
+.gallery-img {
+  max-width: 25vw;
+  max-height: 35vh;
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+/*  GPS-LOCAL*/
+section.gps-img {
+  background: url(/images/banner\ teste.jpg);
+}
+
+div.gps-local {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 10vh;
+  margin-left: 10%;
+}
+
+div.gps-local h2 {
+  font-size: 3rem;
+  color: #c4972e;
+  font-family: "Dancing Script", cursive;
+}
+div.gps-local p {
+  padding-top: 2%;
+  line-height: 1.8rem;
+  color: white;
+}
+
+iframe {
+  padding: 5rem;
+  border-radius: 1rem;
+}
+
+/* medias queries*/
+
+@media (max-width: 1300px) {
+  .acomodações {
+    display: flex;
+  }
+
+  .about-container p {
+    width: calc(50%);
+  }
+  .about-container img {
+    height: calc(380px + 15vh);
+  }
+}
+
+@media (max-width: 1120px) {
+  .acomodações {
+    display: block;
+  }
+  .about-container img {
+    height: calc(380px + 30vh);
+  }
+
+  .about-container p {
+    line-height: 1.56rem;
+  }
+
+  div.gps-local {
+    grid-template-columns: 1fr;
+  }
+
+  div.gps-local h2 {
+    margin-bottom: 2vh;
+    text-align: center;
+    padding-top: 30px;
+  }
+  div.gps-local p {
+    padding-top: 0;
+    line-height: 1.8rem;
+    padding-right: 30px;
+  }
+  div.text-acomodações {
+    text-align: left;
+    padding: 0 0 0 7%;
+  }
+}
+
+@media (max-width: 916px) {
+  .acomodações {
+    display: flex;
+  }
+
+  .about-container img {
+    height: calc(400px + 50vh);
+  }
+}
+
+@media (max-width: 820px) {
+  main {
+    width: 100%;
+  }
+  .gallery {
+    display: block;
+    text-align: center;
+  }
+  .gallery-img {
+    max-width: none;
+  }
+  .acomodações {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.about-container img {
+  height: calc(400px + 40vh);
+}
+
+@media (max-width: 588px) {
+  .about-container img {
+    height: calc(400px + 55vh);
+  }
+
+  div.gps-local h2 {
+    font-size: 2.5rem;
+  }
+
+  iframe {
+    width: 90vw;
+    height: 40vh;
+  }
+}
+
+@media (max-width: 544px) {
+  .about-container img {
+    height: calc(400px 1vh);
+  }
+}
+div.gps-local p {
+  padding-top: 0;
+  line-height: 1.8rem;
+  padding-right: 30px;
+}
+.acomodações {
+  display: block;
+}
+@media (max-width: 485px) {
+  .about-text {
+    top: calc(4vh);
+  }
+
+  .about-container img {
+    height: calc(400px 100vh);
+  }
+
+  .about-container p {
+    font-size: 1.4rem;
+    line-height: 1.55rem;
+  }
+}
+/* 870 px mudar o about por causa do texto*/
